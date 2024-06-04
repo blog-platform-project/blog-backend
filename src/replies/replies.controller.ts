@@ -10,7 +10,9 @@ import {
 import { RepliesService } from './replies.service';
 import { CreateReplyDto } from './dto/create-reply.dto';
 import { UpdateReplyDto } from './dto/update-reply.dto';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('replies')
 @Controller('replies')
 export class RepliesController {
   constructor(private readonly repliesService: RepliesService) {}

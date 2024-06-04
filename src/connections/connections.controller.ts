@@ -10,7 +10,9 @@ import {
 import { ConnectionsService } from './connections.service';
 import { CreateConnectionDto } from './dto/create-connection.dto';
 import { UpdateConnectionDto } from './dto/update-connection.dto';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('connections')
 @Controller('connections')
 export class ConnectionsController {
   constructor(private readonly connectionsService: ConnectionsService) {}

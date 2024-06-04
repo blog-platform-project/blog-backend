@@ -10,6 +10,7 @@ import { ConnectionsModule } from './connections/connections.module';
 import { LikesModule } from './likes/likes.module';
 import { FeedModule } from './feed/feed.module';
 import { SearchModule } from './search/search.module';
+import { DatabaseModule } from './db/database.module';
 
 @Module({
   imports: [
@@ -22,6 +23,7 @@ import { SearchModule } from './search/search.module';
     LikesModule,
     FeedModule,
     SearchModule,
+    DatabaseModule,
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -10,7 +10,9 @@ import {
 import { FeedService } from './feed.service';
 import { CreateFeedDto } from './dto/create-feed.dto';
 import { UpdateFeedDto } from './dto/update-feed.dto';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('feed')
 @Controller('feed')
 export class FeedController {
   constructor(private readonly feedService: FeedService) {}
